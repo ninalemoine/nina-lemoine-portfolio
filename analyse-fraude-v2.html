@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Analyse de Fraude - Nina LEMOINE</title>
+    <style>
+        :root {
+            --peach: #FCE9D9;
+            --brown: #5D4037;
+            --dark-brown: #3E2723;
+            --terracotta: #D66853;
+        }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: var(--peach);
+            color: var(--brown);
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+        .back-link {
+            display: inline-flex;
+            align-items: center;
+            color: var(--terracotta);
+            text-decoration: none;
+            font-weight: 500;
+            margin-bottom: 30px;
+            transition: transform 0.3s ease;
+        }
+        .back-link:hover {
+            transform: translateX(-5px);
+        }
+        .back-link::before {
+            content: '←';
+            margin-right: 8px;
+            font-size: 1.2em;
+        }
+        h1 {
+            color: var(--dark-brown);
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+        }
+        .project-content {
+            background: white;
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+        .section {
+            margin-bottom: 30px;
+        }
+        .section-title {
+            color: var(--terracotta);
+            font-size: 1.5rem;
+            margin-bottom: 15px;
+        }
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        li {
+            margin-bottom: 10px;
+            padding-left: 20px;
+            position: relative;
+        }
+        li::before {
+            content: '→';
+            position: absolute;
+            left: 0;
+            color: var(--terracotta);
+        }
+        .project-title {
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <a href="portfolio-v2.html#projects" class="back-link">Retour au portfolio</a>
+        
+        <div class="project-header">
+            <h1 class="project-title">🤖 Projet Analyse de Fraude – Automatisation de la détection dans Google Sheets</h1>
+        </div>
+
+        <div class="project-content">
+            <div class="project-section">
+                <h2>Description</h2>
+                <p>Script d'analyse intelligente pour identifier des fraudes d'accès badge dans un espace sécurisé.</p>
+            </div>
+
+            <div class="project-section">
+                <h2>🎯 Défi</h2>
+                <p>Détecter les fraudes dans un historique de logs sans solution logicielle externe.</p>
+            </div>
+
+            <div class="project-section">
+                <h2>🧠 Approche</h2>
+                <ul>
+                    <li><strong>Entrées consécutives sans sortie</strong> : détection des membres qui badgent plusieurs fois sans sortie intermédiaire.</li>
+                    <li><strong>Déséquilibre entrées/sorties</strong> : détection de comportements suspects par un nombre d'entrées bien supérieur aux sorties.</li>
+                </ul>
+            </div>
+
+            <div class="project-section">
+                <h2>🛠️ Solution technique</h2>
+                <ul>
+                    <li>Script Google Apps Script capable de lire, trier et analyser des milliers de lignes de logs.</li>
+                    <li>Identification automatique des schémas frauduleux.</li>
+                    <li>Génération de deux rapports :
+                        <ul>
+                            <li><strong>"Fraudeurs"</strong> : données brutes</li>
+                            <li><strong>"Résumé Fraudeurs"</strong> : interprétation intelligente</li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="project-section">
+                <h2>🧩 Ce que j'ai appris</h2>
+                <ul>
+                    <li>Création d'algorithmes conditionnels puissants</li>
+                    <li>Manipulation avancée de données dans Google Sheets et App Script</li>
+                    <li>Mise en place d'un système autonome, reproductible et interprétable</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</body>
+</html> 
